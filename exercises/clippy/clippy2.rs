@@ -8,8 +8,9 @@
 fn main() {
     let mut res = 42;
     let option = Some(12);
-    for x in option {
-        res += x;
+    if option.is_some() {
+        res += option.unwrap();
     }
     println!("{}", res);
 }
+
