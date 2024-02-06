@@ -12,5 +12,6 @@ fn main() {
         res += option.unwrap();
     }
     println!("{}", res);
+    
 }
 
