@@ -44,6 +44,17 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        if s.len()==0 {
+            Person.default()
+        }
+        let elements = s.split(',');
+        let name_str = elements.first();
+        if name_str.is_none {
+            Person.default()
+        }
+        let age_str = elements.get(1);
+        
+
     }
 }
 
